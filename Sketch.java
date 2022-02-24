@@ -4,11 +4,11 @@ public class Sketch extends PApplet {
 	
   public void settings() {
 	// put your size call here
-    size(400, 400);
+    size(500, 500);
   }
 
   public void setup() {
-    background(210, 255, 173);
+    background(176,224,230);
   }
 
   public void draw() {
@@ -29,40 +29,39 @@ public class Sketch extends PApplet {
     stroke(181, 114, 129);
     strokeWeight(3);
     fill(217, 134, 149);
-    triangle(width/((float)80/19), height/((float)80/27), width/20, height/8, width/((float)80/61), height/((float)80/27));
+    triangle(width/((float)80/19), height/((float)80/27), width/2, height/8, width/((float)80/61), height/((float)80/27));
 
     //window
     stroke(192, 128, 129);
     strokeWeight(3);
     fill(204, 259, 255);
-    ellipse(200, 175, 30, 30);
+    ellipse(width/2, height/((float)16/7), width/((float)40/3), height/((float)40/3));
 
     //door
     stroke(192, 128, 129);
     strokeWeight(3);
     fill(239, 187, 204);
-    rect(210, 235, 40, 62);
+    rect(width/((float)40/21), height/((float)80/47), width/10, height/((float)200/31));
 
     //doorknob
     fill(165, 42, 42);
     noStroke();
-    ellipse(240, 265, 7, 7);
+    ellipse(width/((float)5/3), height/((float)80/53), width/((float)400/7), height/((float)400/7));
 
     //ground colour
     fill(163, 193, 173);
     noStroke();
-    rect(0, 294, 400, 294);
+    rect(width*0, height/((float)80/59), width, height/((float)80/59));
 
     //ground first line
     stroke(165, 42, 42);
     strokeWeight(7);
-    line(70, 300, 330, 300);
+    line(width/((float)40/7), height/((float)4/3), width/((float)40/33), height/((float)4/3));
     
     //ground second line
     stroke(165, 42, 42);
     strokeWeight(7);
-    line(100, 330, 300, 330);
+    line(width/4, height/((float)40/33), width/((float)4/3), height/((float)40/33));
   }
   
-  // define other methods down here.
 }
